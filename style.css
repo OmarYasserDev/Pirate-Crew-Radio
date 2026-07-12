@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:#050505;
+    font-family:'Oswald',sans-serif;
+    display: flex;
+}
+.sidebar{
+    width:240px;
+    min-height:100vh;
+    background:#080808;
+    border-right:1px solid rgba(255, 217, 0, 0.251);
+    left:0;
+    top:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    box-shadow: 3px 0px 14px rgba(255, 217, 0, 0.251);
+}
+.sidebar-logo{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.sidebar-logo img{
+    width:180px;
+    transition:.4s;
+}
+.sidebar-logo img:hover{
+    transform:scale(1.05);
+}
+.buttons{
+    width:100%;
+    padding-left:35px;
+}
+.btn{
+    background:none;
+    border:none;
+    color:#d7d7d7;
+    font-size:18px;
+    width:100%;
+    text-align:left;
+    margin:12px 0;
+    cursor:pointer;
+    transition:.35s;
+    letter-spacing:2px;
+    font-family:'Oswald',sans-serif;
+    position:relative;
+}
+.btn:hover{
+    color:#bb2c2c;
+    transform:translateX(10px);
+}
+.active{
+    color:#bb2c2c;
+}
+.active::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    width:55px;
+    height:2px;
+    background:#bb2c2c;
+}
+.tone{
+    width:100%;
+    margin-top:25px;
+    padding:20px 30px;
+    border-top:1px solid #252525;
+    border-bottom:1px solid rgba(255, 217, 0, 0.251);
+}
+.tone p{
+    color:#999;
+    font-size:14px;
+    letter-spacing:2px;
+
+}
+.tone h3{
+    color:#bb2c2c;
+    font-size:35px;
+    margin:8px 0;
+}
+.music-sec{
+    width:100%;
+    text-align:center;
+    color:white;
+    padding:20px;
+    border-bottom: 1px solid rgba(255, 217, 0, 0.251);
+}
+.music-sec p{
+    color:#bdbdbd;
+    margin-top:5px;
+    font-size:14px;
+    letter-spacing:1px;
+}
+.music-sec h3{
+    margin-top:12px;
+    font-family:'Special Elite',cursive;
+    font-size:22px;
+}
+.record{
+    width:170px;
+    border-radius:50%;
+    margin:18px 0;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 0 25px rgba(255,255,255,.08);
+}
+.record:hover{
+    transform:scale(1.05);
+}
+.spin{
+    animation:spin 5s linear infinite;
+}
+@keyframes spin{
+from{
+transform:rotate(0deg);
+}
+to{
+transform:rotate(360deg);
+}
+}
+#playBtn{
+    margin-top:18px;
+    width:140px;
+    height:45px;
+    background:#7a1d19;
+    border:none;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    letter-spacing:2px;
+    transition:.35s;
+    font-family:'Oswald',sans-serif;
+}
+#playBtn:hover{
+    background:#b82f27;
+    transform:translateY(-4px);
+    box-shadow:0px 10px 25px rgba(184,47,39,.4);
+}
+.heartbeat-sec{
+    width:100%;
+    text-align:left;
+    color:white;
+    padding:20px;
+    border-bottom: 1px solid rgba(255, 217, 0, 0.251);
+    margin-left: 15px;
+    font-family:'Oswald',sans-serif;
+    letter-spacing: 4px;
+}
+.heartbeat-sec h5{
+    margin-top: 7.5px;
+    color: rgb(32, 187, 32);
+    transition: .4s;
+}
+.heartbeat-sec h5:hover{
+    transform: translatey(-3px);
+}
+.heartbeat-sec img{
+    width: 200px;
+    height: 30px;
+}
+.crewlog{
+    width:100%;
+    text-align:left;
+    color:white;
+    padding:20px;
+    border-bottom: 1px solid rgba(255, 217, 0, 0.251);
+    font-family:'Oswald',sans-serif;
+}
+.crewlog h5{
+    margin-top: 7.5px;
+    transition: .4s;
+    border-bottom: 1px solid #101010;
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin-left: 15px;
+    transition: .3s;
+}
+.crewlog h5:hover{
+    transform: translateY(-3px);
+}
+.crewlog p{
+    margin-top: 7.5px;
+    transition: .4s;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: silver;
+    margin-left: 15px;
+
+}
+.crewlog button{
+    background-color: transparent;
+    color: red;
+    font-size: 15px;
+    border: 0px;
+    transition: .4s;
+    cursor: pointer;
+    margin-left: 15px;
+
+}
+.crewlog button:hover{
+    transform: translateY(-3px);
+}
+.crewlog img{
+    margin: 0px;
+    width: 200px;
+    transition: .4s;
+
+}
+.crewlog img:hover{
+    transform: translateY(-3px);
+}
+/* NAVBAR */
+.main{
+    height: 100vh;
+    background-image: url(home-background.jpg);
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+}
+.navbar{
+    height: 70px;
+    background-color: #050505;
+    display: flex;
+}
+.button{
+    display: flex;
+    width: 66%;
+    margin-left: 50px;
+}
+.icons-sec{
+    display: flex;
+    justify-content: end;
+    color: red;
+    width: 33%;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+}
+.icons-sec img{
+    height: 40px;
+    transition: .4s;
+}
+.icons-sec span{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.icons-sec p{
+    font-weight: lighter;
+}
+.icons-sec img:hover{
+    transform: translateY(-4px);
+}
