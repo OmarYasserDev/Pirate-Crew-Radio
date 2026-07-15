@@ -420,7 +420,7 @@ transform:rotate(360deg);
 }
 .column{
     background-image: url(papertex.png);
-    height: 90%;
+    height: 95%;
     width: 310px;
     border-radius: 12px;
     border: 1px solid black;
@@ -614,7 +614,7 @@ transform:rotate(360deg);
 }
 .schedule{
     background-image: url(papertex.png);
-    height: 300px;
+    height: 250px;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -624,7 +624,7 @@ transform:rotate(360deg);
 }
 .signup{
     background-image: url(signupsec.jpg);
-    height: 300px;
+    height: 250px;
     width: 650px; 
     transition: .5s;
     background-size:cover;
@@ -723,40 +723,4 @@ transform:rotate(360deg);
 }
 .signup:hover{
     transform: translateY(-10px);
-}
-.wise-sec{
-    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
-                url("newsimg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 350px;
-    margin: 30px;
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.overlay{
-    max-width: 850px;
-    padding: 20px;
-}
-.wise-sec p{
-    font-size: clamp(28px,4vw,52px);
-    line-height: 1.4;
-    color: #9e865b;
-    font-style: italic;
-    margin-bottom: 20px;
-}
-.wise-sec span{
-    color: #c59b5d;
-}
-.wise-sec h5{
-    font-size: 20px;
-    color: #c59b5d;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 400;
 }
