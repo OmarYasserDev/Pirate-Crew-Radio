@@ -427,6 +427,84 @@ transform:rotate(360deg);
     border-color:#8d2c22;
 }
 .wise{
-    background-image: url();
-    height: 60vh;
+    background:url("wise.png") center/cover no-repeat;
+    height:60vh;
+    margin:40px;
+    border:2px solid rgb(57,51,14);
+    display:flex;
+    align-items:center;
+    padding-left:42%;
+    position:relative;
+    gap: 15px;
 }
+.wise-content{
+    width:420px;
+}
+.wise h4{
+    font-family:'Oswald',sans-serif;
+    color:#a7342d;
+    font-size:34px;
+    font-weight:400;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+.wise h3{
+    font-family:'Special Elite',cursive;
+    color:#e6d5b3;
+    font-size:58px;
+    font-weight:400;
+    letter-spacing:3px;
+    margin-bottom:35px;
+}
+.wise p{
+    font-family:'Special Elite',cursive;
+    color:#ece5d8;
+    font-size:28px;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+.wise h6{
+    font-family:'Special Elite',cursive;
+    color:#a7342d;
+    font-size:26px;
+    font-weight:400;
+}
+.sheet-wise{
+    width:340px;
+    height:430px;
+    background:url("papertex.png") center/cover no-repeat;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    border-radius: 7.5px;
+    transform:rotate(-2deg);   
+    padding:35px;
+
+}
+
+.sheet-wise p{
+    font-family:'Special Elite',cursive;
+    font-size:20px;
+    line-height:1.8;
+    color:#2b241c;
+}
+
+.sheet-wise button{
+    width:220px;
+    height: 30px;
+    background:#111;
+    color:#e5d3ae;
+    border:2px solid #2a2a2a;
+    border-radius:4px;
+    font-family:'Oswald',sans-serif;
+    font-size:25px;
+    cursor:pointer;
+    transition:.3s;
+    margin: auto;
+}
+
+.sheet-wise button:hover{
+    background:#8d2c22;
+    color:#fff;
+    border-color:#8d2c22;}
