@@ -348,7 +348,7 @@ transform:rotate(360deg);
 }
 /* ------------------------------------------------- */
 .crew-sec{
-    height: 125vh;
+    height: 170vh;
     margin: 40px;
     border: 1px solid rgb(82, 73, 18);
     display: grid;
@@ -436,6 +436,10 @@ transform:rotate(360deg);
     padding-left:42%;
     position:relative;
     gap: 15px;
+    transition: .5s;
+}
+.wise:hover{
+    transform: translate(10px,-10px);
 }
 .wise-content{
     width:420px;
@@ -470,8 +474,8 @@ transform:rotate(360deg);
     font-weight:400;
 }
 .sheet-wise{
-    width:340px;
-    height:430px;
+    width:290px;
+    height:360px;
     background:url("papertex.png") center/cover no-repeat;
     box-sizing:border-box;
     display:flex;
@@ -480,13 +484,17 @@ transform:rotate(360deg);
     border-radius: 7.5px;
     transform:rotate(-2deg);   
     padding:35px;
-
+    margin-right: 30px;
+    transition: .5s;
+}
+.sheet-wise:hover{
+    transform: translateY(-10px);
 }
 
 .sheet-wise p{
     font-family:'Special Elite',cursive;
-    font-size:20px;
-    line-height:1.8;
+    font-size:17px;
+    line-height:1.6;
     color:#2b241c;
 }
 
@@ -503,8 +511,9 @@ transform:rotate(360deg);
     transition:.3s;
     margin: auto;
 }
-
 .sheet-wise button:hover{
     background:#8d2c22;
     color:#fff;
-    border-color:#8d2c22;}
+    border-color:#8d2c22;
+}
+    
