@@ -19,6 +19,7 @@ body{
     flex-direction:column;
     align-items:center;
     box-shadow: 3px 0px 14px rgba(255, 217, 0, 0.251);
+    color: rgb(132, 105, 70);
 }
 .sidebar-logo{
     margin-top:20px;
@@ -233,7 +234,15 @@ transform:rotate(360deg);
     margin-left:55px;
     color:#d9c7a4;
 }
-
+.end {
+    background-image: url("leftsec.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    border-bottom: 1px solid  rgb(89, 77, 6);rgb(52, 45, 3)
+}
 .herosection h1{
     font-family:'Special Elite', cursive;
     font-size:73px;
