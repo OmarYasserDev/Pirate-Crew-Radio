@@ -6,6 +6,7 @@
     <title>Crew-Radio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="logo" href="logo-sidebar.jpg">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
@@ -15,12 +16,10 @@
             <img src="logo-sidebar.jpg" alt="">
         </div>
         <div class="buttons">
-            <a href="index.html"><button class="active btn">HOME</button><br></a>
+            <a href="index.html"><button class="btn">HOME</button><br></a>
             <a href="crew.html"><button class="btn">CREW</button><br></a>
-            <button class="btn">SCHEDULE</button><br>
-            <button class="btn">LOGBOOK</button><br>
-            <button class="btn">GUESTBOOK</button><br>
-            <button class="btn">CONTACT</button><br>
+            <a href="schedule.html"><button class="btn">SCHEDULE</button><br></a>
+            <a href="contact.html"><button class="btn">CONTACT</button></a>
         </div>
         <div class="tone">
             <p>--TONE IN</p>
@@ -52,12 +51,10 @@
     <div class="main">
         <div class="navbar">
             <div class="button buttons" >
-                <a href="index.html"><button class="active btn">HOME</button><br></a>
+                <a href="index.html"><button class="btn">HOME</button><br></a>
                 <a href="crew.html"><button class="btn">CREW</button><br></a>
                 <a href="schedule.html"><button class="btn">SCHEDULE</button><br></a>
-                <button class="btn">LOGBOOK</button><br>
-                <button class="btn">GUESTBOOK</button><br>
-                <button class="btn">CONTACT</button><br>
+                <a href="contact.html"><button class="btn">CONTACT</button></a>
             </div>
             <div class="icons-sec">
                 <p> <span>•</span> ON AIR</p>
@@ -77,7 +74,6 @@
                      <h3>🌊 SEA CONDITIONS</h3>
                      <p>
                       <span>☁️ Overcast</span><br><span>💨 Winds: 23 km/h</span><br><span>🌊 Waves: Rough</span></p>
-                    <button>View Full Report</button>
                  </div>
             </div>
         </div>
@@ -90,14 +86,12 @@
                 <img src="broadcast.jpg" alt="">
                 <h5>Captain Raven takes <br>Requests</h5>
                 <p>Another night, another storm, <br> You send the requests, <br> we risk the FCC</p>
-                <button>Listen now →</button>
             </div>
             <div class="column BROADCAST">
                 <h6>CREW SPOTLIGHT</h6>
                 <img src="CREW SPOTLIGHT.jpg" alt="" class="CREW-SPOTLIGHT">
                 <h5>DJ cutlass</h5>
                 <p>Blends sea shanties with <br> static and rebellion</p>
-                <button>More about the crew →</button>
             </div>
             <div class="column Messages">
                 <h5>MESSAGES FROM<br>THE SEAS</h5>
@@ -105,7 +99,6 @@
                 <p>Yarr! Best station this side <br> of Davy Jones' locker!</p>
                 <h6>RumQueen_22</h6>
                 <p>Requestin' more fiddle <br> and fewer ads!</p>
-                <button>View GuestBook→</button>
             </div>
         </div>
         <div class="schedule-signup">
@@ -115,14 +108,16 @@
                 <P>02:00- Smoggler's Lounge <br> </P>
                 <P>04:00- Captains Log (live) <br> </P>
                 <P>06:00- Sea Dogs & Guitars <br> </P>
-                <button>Full Schedule</button>
+                <a href="schedule.html"><button>Full Schedule</button></a>
             </div>
             <div class="signup">
                 <h5>JOIN THE CREW</h5>
                 <p>Sign up fpr secret drops. <br> event invites, and more.</p>
                 <div class="sign-up-button">
-                    <input type="email" placeholder="your@email.com">
-                    <button>SIGN-UP</button>
+                    <form action="">    
+                        <input type="email" placeholder="your@email.com">
+                        <button>SIGN-UP</button>
+                    </form>   
                 </div>
             </div>
         </div>

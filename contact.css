@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image:url("join-us-inputs.png");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.contact-us{
+    width:350px;
+    padding:35px;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.45),
+        inset 0 1px 1px rgba(255,255,255,.12);
+    transition:.4s;
+}
+
+.contact-us:hover{
+    transform:translateY(-5px);
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.5),
+        inset 0 1px 1px rgba(255,255,255,.15);
+}
+
+.contact-us form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-us input,
+.contact-us select{
+    width:100%;
+    padding:12px 15px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:rgba(255,255,255,.12);
+    color:white;
+    font-size:15px;
+    border:1px solid rgba(255,255,255,.2);
+    transition:.3s;
+}
+
+.contact-us input::placeholder{
+    color:rgba(255,255,255,.75);
+}
+
+.contact-us select{
+    cursor:pointer;
+}
+
+.contact-us select option{
+    background:#111;
+    color:white;
+}
+
+.contact-us input:focus,
+.contact-us select:focus{
+    border-color:#d4af37;
+    box-shadow:0 0 10px rgba(212,175,55,.45);
+}
+
+.contact-us button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(135deg,#c89b3c,#f6d365);
+    color:black;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-us button:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 15px rgba(246,211,101,.45);
+}
+
+.contact-us button:active{
+    transform:scale(.98);
+}
+
+@media (max-width:500px){
+
+    .contact-us{
+        width:90%;
+        padding:25px;
+    }
+
+}
